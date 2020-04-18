@@ -1,8 +1,0 @@
-#!name=ColorWeather, By NobyDa
-#!desc=彩云天气Vip脚本
-
-[Script]
-ColorWeather.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/ColorWeather.js,type=http-response,pattern=^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather
-
-[MITM]
-hostname = %APPEND% biz.caiyunapp.com
