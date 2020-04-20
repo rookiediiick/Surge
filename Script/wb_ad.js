@@ -1,5 +1,6 @@
 /*
-By: https://github.com/yichahucha/surge/blob/master/wb_ad.js
+仅作为备份自用
+来源: https://github.com/yichahucha/surge/blob/master/wb_ad.js
  */
 
 const path1 = "/groups/timeline";
