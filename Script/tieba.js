@@ -1,4 +1,4 @@
-?*
+/*
 仅作为备份自用
 来源： https://github.com/chavyleung/scripts/blob/master/tieba/tieba.js
 */
