@@ -13,4 +13,4 @@ wb： 微博启动和时间线广告
 
 YouTube： YouTube广告
 
-Bahamaut： 动画疯播放广告
+Bahamaut： 动画疯广告
