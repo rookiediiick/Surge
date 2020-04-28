@@ -1,0 +1,6 @@
+#!name=AD rules.By Nobyda
+#!desc=超多的去广告规则
+#!system=ios
+
+[Rule]
+DOMAIN-SET,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Huge_AD_rules.list,REJECT
