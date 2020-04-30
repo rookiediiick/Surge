@@ -25,7 +25,7 @@ const path19 = "/statuses/video_mixtimeline";
 const path20 = "/video/tiny_stream_video_list";
 
 const url = $request.url;
-var body = $response.body;
+let body = $response.body;
 
 if (
     url.indexOf(path1) != -1 ||
@@ -42,15 +42,11 @@ if (
     if (obj.num) obj.num = obj.original_num;
     if (obj.trends) obj.trends = [];
     body = JSON.stringify(obj);
-}
-
-if (url.indexOf(path3) != -1) {
+} else if (url.indexOf(path3) != -1) {
     let obj = JSON.parse(body);
     if (obj.trend) delete obj.trend;
     body = JSON.stringify(obj);
-}
-
-if (url.indexOf(path4) != -1) {
+} else if (url.indexOf(path4) != -1) {
     let obj = JSON.parse(body);
     obj.recommend_max_id = 0;
     if (obj.status) {
@@ -63,16 +59,12 @@ if (url.indexOf(path4) != -1) {
         obj.datas = [];
     }
     body = JSON.stringify(obj);
-}
-
-if (url.indexOf(path5) != -1 ||
+} else if (url.indexOf(path5) != -1 ||
     url.indexOf(path18) != -1) {
     let obj = JSON.parse(body);
     obj.data = {};
     body = JSON.stringify(obj);
-}
-
-if (url.indexOf(path6) != -1) {
+} else if (url.indexOf(path6) != -1) {
     let obj = JSON.parse(body);
     let segments = obj.segments;
     if (segments && segments.length > 0) {
@@ -84,27 +76,19 @@ if (url.indexOf(path6) != -1) {
         }
     }
     body = JSON.stringify(obj);
-}
-
-if (url.indexOf(path7) != -1) {
+} else if (url.indexOf(path7) != -1) {
     let obj = JSON.parse(body);
     obj.datas = [];
     body = JSON.stringify(obj);
-}
-
-if (url.indexOf(path8) != -1) {
+} else if (url.indexOf(path8) != -1) {
     let obj = JSON.parse(body);
     obj.story_list = [];
     body = JSON.stringify(obj);
-}
-
-if (url.indexOf(path11) != -1) {
+} else if (url.indexOf(path11) != -1) {
     let obj = JSON.parse(body);
     obj.data = [];
     body = JSON.stringify(obj);
-}
-
-if (
+} else if (
     url.indexOf(path9) != -1 ||
     url.indexOf(path12) != -1 ||
     url.indexOf(path13) != -1 ||
@@ -114,9 +98,7 @@ if (
     let obj = JSON.parse(body);
     if (obj.cards) obj.cards = filter_timeline_cards(obj.cards);
     body = JSON.stringify(obj);
-}
-
-if (url.indexOf(path19) != -1) {
+} else if (url.indexOf(path19) != -1) {
     let obj = JSON.parse(body);
     delete obj.expandable_view;
     body = JSON.stringify(obj);
@@ -144,7 +126,7 @@ function filter_comments(datas) {
         let i = datas.length;
         while (i--) {
             const element = datas[i];
-            let type = element.type;
+            const type = element.type;
             if (type == 5 || type == 1 || type == 6) datas.splice(i, 1);
         }
     }
