@@ -1,8 +1,6 @@
 # Surge
 整理的一些备份的脚本和模块：感谢chavyleung yichahucha Nobyda Choler等各位大佬。
 
-TBPriceIP： 配合Surge淘宝历史价格脚本使用（似乎失效了）
-
 Tiebacookies： 获取贴吧cookie
 
 Tiebacron： 贴吧定时签到
