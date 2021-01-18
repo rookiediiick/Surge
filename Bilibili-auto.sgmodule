@@ -1,5 +1,5 @@
 #!name=Bilibili.By Nobyda
-#!desc=Bilibli 自动切换地区
+#!desc=Bilibli-auto-HT
 
 [Script]
 Bili Region = type=http-response,pattern=https:\/\/api\.bilibili\.com\/pgc\/view\/(v\d\/)?app\/season\?access_key,requires-body=1,max-size=0,control-api=1,script-path=https://raw.githubusercontent.com/rookiediiick/Surge/master/Script/Bilibiliauto.js
