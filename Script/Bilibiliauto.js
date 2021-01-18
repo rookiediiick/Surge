@@ -6,7 +6,7 @@ const HK = $persistentStore.read('BiliArea_HK') || 'HongKong'; //Your HongKong s
 
 var obj = JSON.parse($response.body),
 	obj = (obj.result || obj.data || {}).title || '';
-const current = $surge.selectGroupDetails().decisions[Group] || 'Policy error ⚠️'
+const current = $surge.selectGroupDetails().decisions[Group] || 'Policy 调整 ⚠️'
 const str = (() => {
 	if (obj.match(/\u50c5[\u4e00-\u9fa5]+\u6e2f/)) {
 		if (current != HK) return HK;
